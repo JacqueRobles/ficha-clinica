@@ -24,30 +24,30 @@ class Datos :
 
 def data_menu ():   ##muestra datos a travez de un menu##
   print("1.-name \n 2.-age \n 3.-RUT \n 4.-address \n 5.-telephone \n 6.-passport_number \n 7.-allergies \n 8.-surgical_history 9.-current_medications ")
-def data_entry (name, age, RUT, address, telephone, passport_number, allergies, surgical_history, current_medications):   ##entra datos segun el numero escogido##
+def data_entry (self, name, age, RUT, address, telephone, passport_number, allergies, surgical_history, current_medications):   ##entra datos segun el numero escogido##
   
   while(true):
     choice = input("¿Desea ingresar datos? \n (1) Si    (2)No")
     if (choice =="1"):
       option = input("Ingrese el numero de la opcion que desee: ")
       if (option == "1"):
-        name = input("nombre: ")
+        self.name = input("nombre: ")
       elif (option == "2"):
-        age = input("edad: ")
+        self.age = input("edad: ")
       elif (option == "3"):
-        RUT = input("RUT: ")
+        self.RUT = input("RUT: ")
       elif (option == "4"):
-        address = input("direccion: ")
+        self.address = input("direccion: ")
       elif (option == "5"):
-        telephone = input("telefono: ")
+        self.telephone = input("telefono: ")
       elif (option == "6"):
-        passport_number = input("numero de pasaporte: ")
+        self.passport_number = input("numero de pasaporte: ")
       elif (option == "7"):
-        allergies = input("alergias: ")
+        self.allergies = input("alergias: ")
       elif (option == "8"):
-        surgical_history = input("antecedentes quirurjicos: ")
+        self.surgical_history = input("antecedentes quirurjicos: ")
       elif (option == "9"):
-        current_medications = input("medicamentos actuales: ")
+        self.current_medications = input("medicamentos actuales: ")
     elif (choice =="2"):
       break
     
